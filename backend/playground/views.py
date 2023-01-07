@@ -1,3 +1,4 @@
+from django.http import JsonResponse, HttpResponseBadRequest
 
 from django.shortcuts import render
 from django.db.models import Count
@@ -26,4 +27,10 @@ def truck_sensor_data(request):
     return Response(serializer.data)
     
     
-   
+def api_endpoint(request):
+  if request.method == 'GET':
+    data1 = retrieve_data_from_database()
+    return JsonResponse(data1)
+  else:
+    return HttpResponseBadRequest()
+
