@@ -35,3 +35,7 @@ class TruckSensorDataSerializer(serializers.ModelSerializer):
                 'rnd'
                 ]
 
+class TruckSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Truck
+        fields = ['truck_id', 'truck_type_id']
