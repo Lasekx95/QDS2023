@@ -19,24 +19,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='color-s'>
-      <Topnav/>
-      <div className='flex'>
-        <SideNav/>
+        <Topnav />
+        <div className='flex'>
+          <SideNav />
           <div className='flex mx-auto'>
-        <Vehiclecard/>
-        <Vehiclecard1/>
-        <Vehiclecard2/>
+            <Vehiclecard />
+            <Vehiclecard1 />
+            <Vehiclecard2 />
+          </div>
         </div>
-      </div>
-      <div className='flex'>
-        <div className='flex ml-72'>
-        <Vehiclecard3/>
-        <Vehiclecard2/>
-        <Vehiclecard/>
+        <div className='flex'>
+          <div className='flex ml-72'>
+            <Vehiclecard3 />
+            <Vehiclecard2 />
+            <Vehiclecard />
+          </div>
         </div>
-      </div>
-
-
       </main>
     </>
   )
