@@ -5,7 +5,7 @@ export default function Notify() {
                 <div className="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g className="nc-icon-wrapper" stroke-width="1" fill="#000000" stroke="#000000"><circle data-color="color-2" cx="8" cy="3.5" r="3" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><path d="M8,9a6.5,6.5,0,0,0-6.5,6.5h13A6.5,6.5,0,0,0,8,9Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
                     <div className="ml-3 text-sm font-normal">
-                        <span className="mb-1 text-sm font-semibold text-gray-900 dark:text-white">System</span>
+                        <span className="mb-1 text-sm font-semibold text-gray-900 ">System</span>
                         <div className="mb-2 text-sm font-normal">
                             Vehicle ID#006 is scheduled for maintenance on 01/06/2023
                         </div>
