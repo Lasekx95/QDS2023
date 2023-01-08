@@ -4,7 +4,7 @@ import Link from "next/link";
 const SideNav = () => {
    return (
       <aside className="w-64" aria-label="Sidebar">
-         <div className="px-3 py-4 overflow-y-auto rounde dark:bg-gray-800">
+         <div className="px-3 py-4 overflow-y-auto rounde">
             <ul className="space-y-2">
                {/* Seperate Card */}
                <li>
@@ -74,7 +74,7 @@ const SideNav = () => {
                   </Link>
                </li>
                <li>
-                  <Link href="/administration" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                  <Link href="/" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g className="nc-icon-wrapper" stroke-width="2" fill="#000000" stroke="#000000"><path d="M23,13.5v-3l-3.248-.443a7.927,7.927,0,0,0-.9-2.165l1.984-2.61L18.718,3.161l-2.61,1.984a7.927,7.927,0,0,0-2.165-.9L13.5,1h-3l-.443,3.248a7.927,7.927,0,0,0-2.165.9L5.282,3.161,3.161,5.282l1.984,2.61a7.927,7.927,0,0,0-.9,2.165L1,10.5v3l3.248.443a7.927,7.927,0,0,0,.9,2.165l-1.984,2.61,2.121,2.121,2.61-1.984a7.927,7.927,0,0,0,2.165.9L10.5,23h3l.443-3.248a7.927,7.927,0,0,0,2.165-.9l2.61,1.984,2.121-2.121-1.984-2.61a7.927,7.927,0,0,0,.9-2.165Z" fill="none" stroke="#000000" stroke-linecap="square" stroke-miterlimit="10"></path> <circle data-color="color-2" cx="12" cy="12" r="3" fill="none" stroke-linecap="square" stroke-miterlimit="10"></circle></g></svg>
                      <span className="flex-1 ml-3 whitespace-nowrap">Administration</span>
                   </Link>
