@@ -5,7 +5,7 @@ import SideNav from '../components/sidenav'
 import { FunnelChart } from 'recharts/types/chart/FunnelChart'
 import Averageschart from '../components/avg-chart'
 import Fuelchart from '../components/fuel-mile-chart'
-
+import Efficencytable from '../components/efficencytable'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,7 +29,9 @@ export default function Home() {
           <Averageschart/>
           </div>
       </div>
-
+      <div>
+        <Efficencytable/>
+      </div>
       </main>
     </>
   )
