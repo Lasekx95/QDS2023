@@ -7,6 +7,8 @@ import Topnav from '../components/topnav'
 import SideNav from '../components/sidenav'
 import Alertsuccess from '../components/alert/Alertsuccess'
 import Notify from '../components/notify/Notify'
+import Form1 from '../components/form'
+import Footer from '../components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,13 +27,13 @@ export default function maintenence() {
           <SideNav />
 
           <div className='flex my-8 ml-20 mr-2'>
-            <Form />
+            <Form1 />
             <div className=''>
               <Notification />
             </div>
           </div>
-
         </div>
+        <Footer/>
       </main>
     </>
   )

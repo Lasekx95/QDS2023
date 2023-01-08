@@ -4,6 +4,8 @@ import { Inter } from '@next/font/google'
 // Components
 import Topnav from '../components/topnav'
 import SideNav from '../components/sidenav'
+import Footer from '../components/footer'
+import Admin from '../components/admin'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,8 +21,10 @@ export default function Home() {
         <Topnav />
         <div className='flex'>
           <SideNav />
-          
+          <Admin/>
+          <Admin/>
         </div>
+        <Footer/>
       </main>
     </>
   )

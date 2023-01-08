@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Topnav from '../components/topnav'
 import SideNav from '../components/sidenav'
+import Image from 'next/image'
+import Footer from '../components/footer'
 
 
 
@@ -19,9 +21,10 @@ export default function Home() {
       <Topnav/>
       <div className='flex'>      
       <SideNav/>
+      <img className="rounded-md mx-auto" src="/map1.png" alt="Map showing current routing and stops" />
       </div>
 
-      
+      <Footer/>
       </main>
     </>
   )

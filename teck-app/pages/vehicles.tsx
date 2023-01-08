@@ -9,6 +9,7 @@ import Vehiclecard from '../components/vehicle-cards/vehiclecard'
 import Vehiclecard1 from '../components/vehicle-cards/vehiclecard1'
 import Vehiclecard2 from '../components/vehicle-cards/vehiclecard2'
 import Vehiclecard3 from '../components/vehicle-cards/vehiclecard3'
+import Footer from '../components/footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,6 +40,7 @@ export default function Home() {
             <Vehiclecard />
           </div>
         </div>
+        <Footer/>
       </main>
     </>
   )

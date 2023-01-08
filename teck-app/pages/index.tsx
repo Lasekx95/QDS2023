@@ -6,6 +6,7 @@ import { FunnelChart } from 'recharts/types/chart/FunnelChart'
 import Averageschart from '../components/Avg-chart'
 import Fuelchart from '../components/Fuel-mile-chart'
 import Efficencytable from '../components/efficencytable'
+import Footer from '../components/footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,6 +34,7 @@ export default function Home() {
       <div>
         <Efficencytable/>
       </div>
+      <Footer/>
       </main>
     </>
   )
