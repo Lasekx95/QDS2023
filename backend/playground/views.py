@@ -3,11 +3,11 @@ from django.shortcuts import render
 from django.db.models import Count
 from django.http import HttpResponse
 from rest_framework.response import Response
-from .models import TruckSensorData
+from .models import Truck
 from rest_framework.decorators import api_view
 
 
-from .serializers import TruckSensorDataSerializer
+from .serializers import TruckSerializer
 
 import json
 import time
@@ -31,9 +31,9 @@ import time
 
 @api_view(['GET'])
 def truck_sensor_data(request):
-    data = TruckSensorData.objects.filter(pk=1)
+    data = Truck.objects.all()
 
-    serializer = TruckSensorDataSerializer(data, many=True)
+    serializer = TruckSerializer(data, many=True)
     return Response(serializer.data)
     
     
