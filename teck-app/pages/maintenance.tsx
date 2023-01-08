@@ -2,10 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Topnav from '../components/topnav'
 import SideNav from '../components/sidenav'
-import Vehiclecard from '../components/vehicle-cards/vehiclecard'
-import Vehiclecard1 from '../components/vehicle-cards/vehiclecard1'
-import Vehiclecard2 from '../components/vehicle-cards/vehiclecard2'
-import Vehiclecard3 from '../components/vehicle-cards/vehiclecard3'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,13 +19,8 @@ export default function Home() {
       <Topnav/>
       <div className='flex'>
         <SideNav/>
-        <div className='flex mx-auto'>
-        <Vehiclecard/>
-        <Vehiclecard1/>
-        <Vehiclecard2/>
-        </div>
+        
       </div>
-
       </main>
     </>
   )
