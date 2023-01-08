@@ -6,7 +6,7 @@ import { Inter } from '@next/font/google'
 import Topnav from '../components/topnav'
 import SideNav from '../components/sidenav'
 import Alertsuccess from '../components/alert/Alertsuccess'
-import Notify from '../components/Notify'
+import Notify from '../components/notify/Notify'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +27,6 @@ export default function maintenence() {
           <div className='flex my-8 ml-20 mr-2'>
             <Form />
             <div className=''>
-              <Alertsuccess />
               <Notification />
             </div>
           </div>
