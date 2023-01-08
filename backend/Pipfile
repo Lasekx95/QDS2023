@@ -9,6 +9,7 @@ djangorestframework = "*"
 drf-nested-routers = "*"
 django-debug-toolbar = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
