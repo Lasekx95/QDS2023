@@ -210,7 +210,7 @@ const Efficencytable = () => {
                 <td className="px-6 py-4">
                     0
                 </td>
-            </tr>=
+            </tr>
         </tbody>
     </table>
 </div>
