@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 export default function Notify() {
     return (
         <>
             <div id="toast-message-cta" className="w-full max-w-xs p-4 my-5 text-gray-500 bg-white rounded-lg shadow dark:bg-gray-800 dark:text-gray-400" role="alert">
                 <div className="flex">
-                    <img className="w-8 h-8 rounded-full shadow-lg" src="./teck-app/public/woman-headshot.jpeg" alt="A woman's headshot" />
+                    <Image
+                        className="w-8 h-8 rounded-full shadow-lg"
+                        src="/teck-app/public/woman-headshot.jpeg"
+                        alt="A woman's headshot"
+                        width={100}
+                        height={100}
+                    />
                     <div className="ml-3 text-sm font-normal">
                         <span className="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Jese Leos</span>
                         <div className="mb-2 text-sm font-normal">
