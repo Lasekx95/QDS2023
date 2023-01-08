@@ -11,6 +11,8 @@ const Averageschart = () => {
     { name: "Productive Time", value: 13.84 }
   ]
 
+  const colours:string[] = ['#41D3BD', '#FFFFF2', '#791E94', '#DE6449', '#407899'];
+  
   return (
     <div className="App">
       <h1 className='text-xl text-center'>Productivity Measurement</h1>
@@ -23,7 +25,7 @@ const Averageschart = () => {
           cx="50%"
           cy="50%"
           outerRadius={80}
-          fill="#8884d8"
+          fill='#040f76'
           label
         />
         <Tooltip />
