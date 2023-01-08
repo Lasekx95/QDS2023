@@ -22,12 +22,20 @@ export default function Home() {
       <Topnav/>
       <div className='flex'>
         <SideNav/>
-        <div className='flex mx-auto'>
+          <div className='flex mx-auto'>
         <Vehiclecard/>
         <Vehiclecard1/>
         <Vehiclecard2/>
         </div>
       </div>
+      <div className='flex'>
+        <div className='flex ml-72'>
+        <Vehiclecard3/>
+        <Vehiclecard2/>
+        <Vehiclecard/>
+        </div>
+      </div>
+
 
       </main>
     </>
