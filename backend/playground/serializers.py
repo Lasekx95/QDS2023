@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from django.db.models import Count
 
 from . import models
 
@@ -19,11 +18,9 @@ from . import models
 #     rnd = serializers.IntegerField()
 
 class TruckSensorDataSerializer(serializers.ModelSerializer):
-    
     class Meta:
         model = models.TruckSensorData
-        fields = [
-                'log_id',
+        fields = ['log_id',
                 'time_stamp',
                 'gps_northing',
                 'gps_easting',
