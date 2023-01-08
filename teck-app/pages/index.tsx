@@ -25,7 +25,6 @@ export default function Home() {
       <div className='flex'>
         <SideNav/>
           <div className='rounded-lg'>
-            <Fuelchart/>
           </div>
           <div className='rounded-lg'>
           <Averageschart/>

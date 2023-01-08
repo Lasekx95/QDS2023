@@ -1,9 +1,21 @@
+import Image from "next/image";
+
 export default function Notify() {
     return (
         <>
             <div id="toast-message-cta" className="w-full max-w-xs p-4 my-5 text-gray-500 bg-white rounded-lg shadow " role="alert">
                 <div className="flex">
+<<<<<<< HEAD:teck-app/components/notify/Notify.tsx
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g className="nc-icon-wrapper" stroke-width="1" fill="#000000" stroke="#000000"><circle data-color="color-2" cx="8" cy="3.5" r="3" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><path d="M8,9a6.5,6.5,0,0,0-6.5,6.5h13A6.5,6.5,0,0,0,8,9Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+=======
+                    <Image
+                        className="w-8 h-8 rounded-full shadow-lg"
+                        src="/teck-app/public/woman-headshot.jpeg"
+                        alt="A woman's headshot"
+                        width={100}
+                        height={100}
+                    />
+>>>>>>> 2744b7d925ae0ded1dc4a3fcd1900a9805262fb2:teck-app/components/Notify.tsx
                     <div className="ml-3 text-sm font-normal">
                         <span className="mb-1 text-sm font-semibold text-gray-900 ">System</span>
                         <div className="mb-2 text-sm font-normal">
