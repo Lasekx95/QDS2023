@@ -8,7 +8,7 @@ const Topnav = () => {
     <a href="https://www.teck.com/" className="flex items-center">
         <Image src="/teck-logo.png" width={100} height={150} alt="Teck Logo" />
     </a>
-    <span className="self-center text-xl font-semibold whitespace-nowrap border-2 mr-96 rounded-md">
+    <span className="self-center text-xl font-semibold border-2 rounded-md whitespace-nowrap mr-96">
         <input type="text" placeholder="Search.."/>
       </span>
 

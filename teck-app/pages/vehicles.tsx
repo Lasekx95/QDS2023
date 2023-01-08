@@ -3,12 +3,12 @@ import { Inter } from '@next/font/google'
 import { useEffect, useState } from "react";
 
 // Components
-import Topnav from '../components/topnav'
-import SideNav from '../components/sidenav'
-import Vehiclecard from '../components/vehicle-cards/vehiclecard'
-import Vehiclecard1 from '../components/vehicle-cards/vehiclecard1'
-import Vehiclecard2 from '../components/vehicle-cards/vehiclecard2'
-import Vehiclecard3 from '../components/vehicle-cards/vehiclecard3'
+import Topnav from '../components/Topnav'
+import SideNav from '../components/Sidenav'
+import Vehiclecard from '../components/vehicle-cards/Vehiclecard'
+import Vehiclecard1 from '../components/vehicle-cards/Vehiclecard1'
+import Vehiclecard2 from '../components/vehicle-cards/Vehiclecard2'
+import Vehiclecard3 from '../components/vehicle-cards/Vehiclecard3'
 
 const inter = Inter({ subsets: ['latin'] })
 
