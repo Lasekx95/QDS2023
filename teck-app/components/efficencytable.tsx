@@ -36,50 +36,50 @@ const Efficencytable = () => {
                     ID# 01
                 </th>
                 <td className="px-6 py-4">
-                    0
+                    45
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    20
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    12
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    15%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    20%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    11%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    12%
                 </td>
             </tr>            <tr className="bg-white border-b">
                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     ID# 02
                 </th>
                 <td className="px-6 py-4">
-                    0
+                    30
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    25
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    8
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    12%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    32%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    13%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    15%
                 </td>
             </tr>
             <tr className="bg-white border-b">
@@ -87,25 +87,25 @@ const Efficencytable = () => {
                     ID# 03
                 </th>
                 <td className="px-6 py-4">
-                    0
+                    59
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    30
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    20
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    9%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    8%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    9%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    11%
                 </td>
             </tr>
             <tr className="bg-white border-b">
@@ -113,25 +113,25 @@ const Efficencytable = () => {
                     ID# 04
                 </th>
                 <td className="px-6 py-4">
-                    0
+                    12
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    5
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    3
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    41%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    51%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    43%
                 </td>
                 <td className="px-6 py-4">
-                    0
+                    47%
                 </td>
             </tr>
             <tr className="bg-white border-b">
