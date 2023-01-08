@@ -6,7 +6,7 @@ import SideNav from '../components/sidenav'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function maintenence() {
   return (
     <>
       <Head>
@@ -16,12 +16,33 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='color-s'>
-      <Topnav/>
-      <div className='flex'>
-        <SideNav/>
-        
-      </div>
+        <Topnav />
+        <div className='flex'>
+          <SideNav />
+
+          <div className='flex'>
+            <Form />
+            <Notification />
+          </div>
+        </div>
       </main>
+    </>
+  )
+}
+
+function Form() {
+  return (
+    <>
+      <div className="m-5 rounded-md w-96 h-96 bg-slate-300">Form</div>
+    </>
+  )
+}
+
+
+function Notification() {
+  return (
+    <>
+      <div className='m-5 rounded-md w-70 h-96 bg-slate-300'>Notification Centre</div>
     </>
   )
 }
