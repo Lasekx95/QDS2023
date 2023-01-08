@@ -39,8 +39,6 @@ export default function Home() {
             <Vehiclecard />
           </div>
         </div>
-
-
       </main>
     </>
   )
