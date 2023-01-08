@@ -16,11 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='color-s'>
-      <Topnav/>
-      <div className='flex'>
-        <SideNav/>
-        
-      </div>
+        <Topnav />
+        <div className='flex'>
+          <SideNav />
+
+        </div>
       </main>
     </>
   )
