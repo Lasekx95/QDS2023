@@ -3,8 +3,9 @@ import { Inter } from '@next/font/google'
 import Topnav from '../components/topnav'
 import SideNav from '../components/sidenav'
 import { FunnelChart } from 'recharts/types/chart/FunnelChart'
-import Averageschart from '../components/avg-chart'
-import Fuelchart from '../components/fuel-mile-chart'
+import Averageschart from '../components/Avg-chart'
+import Fuelchart from '../components/Fuel-mile-chart'
+import Efficencytable from '../components/efficencytable'
 
 
 const inter = Inter({ subsets: ['latin'] })

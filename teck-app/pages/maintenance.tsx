@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { Inter } from '@next/font/google'
 
 // Components
-import Topnav from '../components/Topnav'
-import SideNav from '../components/Sidenav'
+import Topnav from '../components/topnav'
+import SideNav from '../components/sidenav'
 import Alertsuccess from '../components/alert/Alertsuccess'
 import Notify from '../components/Notify'
 
