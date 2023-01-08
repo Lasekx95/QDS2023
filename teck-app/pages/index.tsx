@@ -29,6 +29,7 @@ export default function Home() {
           <div className='rounded-lg'>
           <Averageschart/>
           </div>
+          <Fuelchart/>
       </div>
       <div>
         <Efficencytable/>
