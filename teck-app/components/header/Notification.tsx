@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Headshot from '../public/woman-headshot.jpeg'
+import Headshot from '../../public/woman-headshot.jpeg'
 
 export default function Notification() {
     return (

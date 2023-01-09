@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 
 // Components
-import Topnav from '../components/topnav'
+import Topnav from '../components/header/topnav'
 import SideNav from '../components/sidenav'
 import Footer from '../components/footer'
 import Admin from '../components/admin'

@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 import Notification from "./Notification";
+import Useravatar from "./Useravatar";
 
 const Topnav = () => {
   return (<nav>
@@ -9,7 +9,7 @@ const Topnav = () => {
         <a href="https://www.teck.com/" className="flex items-center">
           <Image src="/teck-logo.png" width={100} height={150} alt="Teck Logo" />
         </a>
-        <span className="self-center text-xl font-semibold border-2 rounded-md whitespace-nowrap mr-96">
+        <span className="self-center px-10 py-2 text-sm font-semibold border-2 rounded-md whitespace-nowrap mr-96">
           <input type="text" placeholder="Search.." />
         </span>
 
@@ -26,14 +26,8 @@ const Topnav = () => {
                 Support
               </a>
             </li>
-            <div>
-              <Notification />
-            </div>
-            <li>
-              <p className="block py-2 pl-3 pr-4 text-gray-700 rounded md:hover:bg-transparent md:border-0 md:p-0">
-                user@teck.com
-              </p>
-            </li>
+            <Notification />
+            <Useravatar />
           </ul>
         </div>
       </div>

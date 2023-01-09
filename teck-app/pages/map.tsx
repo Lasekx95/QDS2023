@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import Topnav from '../components/topnav'
+import Topnav from '../components/header/topnav'
 import SideNav from '../components/sidenav'
 import Image from 'next/image'
 import Footer from '../components/footer'
