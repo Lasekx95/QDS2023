@@ -1,23 +1,26 @@
 import React from 'react';
 import axios from "axios";
+import { StringifyOptions } from 'querystring';
 
 interface TruckData {
-  // define the shape of the truck data here
-  truck_id: string;
-  truck_type_id: string;
+  truck_id: number;
+  gps_northing: number;
+  fuel_rate: number;
+  status: string;
+  payload: number;
+  truck_type_id: number;
+  shovel_id: number;
+  dump_id: number
 }
-
 
 const Efficencytable = () => {
     const [data, setData] = React.useState<TruckData[]>([]);
 
   React.useEffect(() => {
-    // make a request to the API to fetch the data
-    axios.get('https://teck-prod.herokuapp.com/playground/data/?format=api').then(response => {
+    axios.get('https://teck-prod.herokuapp.com/playground/data/').then(response => {
       setData(response.data);
     }).catch(error => {
       console.log(error);
-      // you can also set an error state here
     });
   }, []);
   
@@ -53,17 +56,22 @@ const Efficencytable = () => {
         </thead>
         <tbody>
         
-        {data &&
-  data.map((truck: TruckData, index: number) => (
+        {data && data.map((truck: TruckData, index: number) => (
     <tr className="bg-white border-b">
       <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
         ID# {truck.truck_id}
       </th>
+      <td className="px-6 py-4">{truck.gps_northing}</td>
+      <td className="px-6 py-4">{truck.fuel_rate}</td>
+      <td className="px-6 py-4">{truck.status}</td>
+      <td className="px-6 py-4">{truck.payload}</td>
       <td className="px-6 py-4">{truck.truck_type_id}</td>
+      <td className="px-6 py-4">{truck.shovel_id}</td>
+      <td className="px-6 py-4">{truck.dump_id}</td>
+      
       {/* render the rest of the table cells here */}
     </tr>
   ))}
-
         </tbody>
     </table>
 </div>
@@ -71,160 +79,3 @@ const Efficencytable = () => {
 }
  
 export default Efficencytable;
-
-
-                      {/* <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    ID# 02
-                </th>
-                <td className="px-6 py-4">
-                    FUCK
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-            </tr>
-            <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    ID# 03
-                </th>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-            </tr>
-            <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    ID# 04
-                </th>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-            </tr>
-            <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    ID# 05
-                </th>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-            </tr>
-            <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    ID# 06
-                </th>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-            </tr>            <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    ID# 07
-                </th>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-                <td className="px-6 py-4">
-                    0
-                </td>
-            </tr> */}
