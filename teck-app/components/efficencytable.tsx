@@ -59,7 +59,7 @@ const Efficencytable = () => {
         {data && data.map((truck: TruckData, index: number) => (
     <tr className="bg-white border-b">
       <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-        ID# {truck.truck_id}
+        ID# {truck.truck_id} 
       </th>
       <td className="px-6 py-4">{truck.gps_northing}</td>
       <td className="px-6 py-4">{truck.fuel_rate}</td>

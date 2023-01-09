@@ -31,7 +31,7 @@ import time
 
 @api_view(['GET'])
 def truck_sensor_data(request):
-    data = TruckSensorData.objects.filter(truck_id=1)
+    data = TruckSensorData.objects.filter(truck_id=1)[:1000]
 
     serializer = TruckSensorDataSerializer(data, many=True)
     return Response(serializer.data)
