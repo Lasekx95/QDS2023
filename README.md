@@ -4,9 +4,10 @@
 
 ### Team Members
 - Edward Naidoo,
-- Nidriah,
-- Sunghun Kim
+- Nadhira,
+- Sunghun Kim (Paul)
 - Tyrone,
+- Dustin,
 - Zack
 
 ### Stack?
