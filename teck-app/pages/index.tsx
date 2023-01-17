@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import Topnav from '../components/topnav'
+import Topnav from '../components/header/topnav'
 import SideNav from '../components/sidenav'
 import { FunnelChart } from 'recharts/types/chart/FunnelChart'
-import Averageschart from '../components/Avg-chart'
+import Averageschart from '../components/avg-chart'
 import Fuelchart from '../components/Fuel-mile-chart'
 import Efficencytable from '../components/efficencytable'
+import Footer from '../components/footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,18 +21,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='color-s'>
-      <Topnav/>
-      <div className='flex'>
-        <SideNav/>
+        <Topnav />
+        <div className='flex'>
+          <SideNav />
           <div className='rounded-lg'>
           </div>
           <div className='rounded-lg'>
-          <Averageschart/>
+            <Averageschart />
           </div>
-      </div>
-      <div>
-        <Efficencytable/>
-      </div>
+          {/* <Fuelchart /> */}
+        </div>
+        <div>
+          <Efficencytable />
+        </div>
+        <Footer />
       </main>
     </>
   )

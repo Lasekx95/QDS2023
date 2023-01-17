@@ -3,12 +3,10 @@ import { Inter } from '@next/font/google'
 import { useEffect, useState } from "react";
 
 // Components
-import Topnav from '../components/topnav'
+import Topnav from '../components/header/topnav'
 import SideNav from '../components/sidenav'
 import Vehiclecard from '../components/vehicle-cards/vehiclecard'
-import Vehiclecard1 from '../components/vehicle-cards/vehiclecard1'
-import Vehiclecard2 from '../components/vehicle-cards/vehiclecard2'
-import Vehiclecard3 from '../components/vehicle-cards/vehiclecard3'
+import Footer from '../components/footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,19 +24,27 @@ export default function Home() {
         <Topnav />
         <div className='flex'>
           <SideNav />
-          <div className='flex items-end mx-auto my-6'>
+          <div className='flex items-end mx-auto my-5'>
             <Vehiclecard />
-            <Vehiclecard1 />
-            <Vehiclecard2 />
+            <Vehiclecard />
+            <Vehiclecard />
           </div>
         </div>
         <div className='flex justify-end'>
-          <div className='flex items-end mx-auto mr-8'>
-            <Vehiclecard3 />
-            <Vehiclecard2 />
+          <div className='flex items-end mx-auto my-5 mr-7'>
+            <Vehiclecard />
+            <Vehiclecard />
             <Vehiclecard />
           </div>
         </div>
+        <div className='flex justify-end'>
+          <div className='flex items-end mx-auto my-5 mr-7'>
+            <Vehiclecard />
+            <Vehiclecard />
+            <Vehiclecard />
+          </div>
+        </div>
+        <Footer/>
       </main>
     </>
   )
